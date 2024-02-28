@@ -1,0 +1,73 @@
+/* Class panels */
+.panelSections {
+    -fx-background-image: url("../img/fondoReserva.jpg");
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+.panelSections:hover {
+    /*-fx-border-color: blue;*/
+    -fx-border-color: #3D6562;
+    -fx-border-width: 2px;
+}
+
+.panelCategories {
+    -fx-background-color: #EEEEEE;
+    -fx-border-color: #dcdbdb;
+    -fx-border-radius: 2px;
+    -fx-border-width: 1px;
+}
+
+/* Class labels */
+.labelTitles {
+    -fx-font-family: "Segoe Print";
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+/* Class buttons */
+.buttonReserve {
+    /*-fx-background-color: #0A448E;*/
+    -fx-background-color: #AF4D15;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-font-family: "Segoe Print";
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+}
+
+.buttonReserve:hover {
+    -fx-border-color: #6e6d6d;
+    /*-fx-background-color: #022256;*/
+    -fx-background-color: #C67325;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+}
+
+/* Class tables */
+.table-view .column-header {
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+    -fx-background-color: #4e4f56;
+}
+
+.table-view .column-header > .label {
+    -fx-text-fill: white;
+}
+
+.table-view .table-cell {
+    -fx-alignment: CENTER;
+}
+
+/* IDs */
+#paneMain {
+    -fx-background-color: #d5cfc8;
+}
+
+#paneTitle {
+    /*-fx-background-color: linear-gradient(to right, #080b80, #0a0c70, #0B0C63);*/
+    -fx-background-color: linear-gradient(to right, #3D6562, #306A60, #4A664F);
+    -fx-text-fill: white;
+}
+

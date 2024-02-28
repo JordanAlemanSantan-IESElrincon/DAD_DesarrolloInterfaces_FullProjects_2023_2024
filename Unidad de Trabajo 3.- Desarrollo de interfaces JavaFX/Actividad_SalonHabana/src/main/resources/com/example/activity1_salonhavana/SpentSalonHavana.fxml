@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<Pane id="paneMain" fx:id="paneMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1010.0" prefWidth="860.0" stylesheets="@css/stylesSpentSalonHavana.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.activity1_salonhavana.SpentSalonHavana">
+    <Pane id="paneTitle" fx:id="paneTitle" prefHeight="100.0" prefWidth="860.0">
+        <Text fill="WHITE" fontSmoothingType="LCD" layoutX="260.0" layoutY="64.0" nodeOrientation="LEFT_TO_RIGHT" stroke="#0d0d0d" strokeDashOffset="5.0" strokeMiterLimit="5.0" strokeType="OUTSIDE" strokeWidth="2.0" text="DATOS DE RESERVA">
+            <font>
+                <Font name="Segoe UI Bold" size="36.0" />
+            </font>
+        </Text>
+    </Pane>
+    <Pane layoutY="120.0" prefHeight="800.0" prefWidth="860.0">
+        <Pane id="paneSectionClientDates" fx:id="paneSectionClientDates" layoutX="60.0" prefHeight="190.0" prefWidth="740.0" styleClass="panelSections">
+            <Group layoutX="15.0" layoutY="-11.0">
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="23.0" stroke="BLACK" strokeLineCap="BUTT" strokeType="OUTSIDE" width="100.0" />
+                <Text layoutX="6.0" layoutY="16.0" stroke="#007df2" strokeLineCap="ROUND" strokeType="INSIDE" text="Datos del cliente" />
+            </Group>
+            <Pane id="paneClientDatesBackground" fx:id="paneClientDatesBackground" layoutX="30.0" layoutY="40.0" prefHeight="130.0" styleClass="panelCategories">
+                <Pane id="paneClientName" fx:id="paneClientName" prefHeight="70.0" prefWidth="680.0">
+                    <Label id="labelClientName" fx:id="labelClientName" layoutY="10.0" prefHeight="30.0" prefWidth="100.0" styleClass="labelTitles" text="Nombre:">
+                        <padding>
+                            <Insets left="20.0" />
+                        </padding>
+                    </Label>
+                    <TextField id="textFieldClientName" fx:id="textFieldClientName" layoutX="100.0" layoutY="10.0" prefHeight="30.0" prefWidth="560.0" />
+                    <StackPane id="stackPanePlaceholderName" fx:id="stackPanePlaceholderName" alignment="CENTER_LEFT" layoutX="100.0" layoutY="10.0" prefHeight="30.0" prefWidth="560.0">
+                        <opaqueInsets>
+                            <Insets />
+                        </opaqueInsets>
+                        <padding>
+                            <Insets left="10.0" />
+                        </padding>
+                        <Text id="textPlaceholderName" fx:id="textPlaceholderName" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="placeholder" text="Escriba su nombre" />
+                    </StackPane>
+                    <Text id="textErrorName" fx:id="textErrorName" layoutX="100.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="errors" text="Este campo no puede estar vacío" />
+                    <Text id="textErrorNameIncorrect" fx:id="textErrorNameIncorrect" layoutX="100.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="errors" text="Campo nombre sólo puede contener caracteres alfanuméricos" />
+                </Pane>
+                <Pane id="paneClientPhone" fx:id="paneClientPhone" layoutY="60.0" prefHeight="70.0" prefWidth="680.0">
+                    <Label id="labelClientPhone" fx:id="labelClientPhone" layoutY="10.0" prefHeight="30.0" prefWidth="100.0" styleClass="labelTitles" text="Teléfono:">
+                        <padding>
+                            <Insets left="20.0" />
+                        </padding>
+                    </Label>
+                    <TextField id="textFieldClientPhone" fx:id="textFieldClientPhone" layoutX="100.0" layoutY="10.0" prefHeight="30.0" prefWidth="560.0" />
+                    <StackPane id="stackPanePlaceholderPhone" fx:id="stackPanePlaceholderPhone" alignment="CENTER_LEFT" layoutX="100.0" layoutY="10.0" prefHeight="30.0" prefWidth="560.0">
+                        <opaqueInsets>
+                            <Insets />
+                        </opaqueInsets>
+                        <padding>
+                            <Insets left="10.0" />
+                        </padding>
+                        <Text id="textPlaceholderPhone" fx:id="textPlaceholderPhone" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="placeholder" text="Escriba su teléfono" />
+                    </StackPane>
+                    <Text id="textErrorPhone" fx:id="textErrorPhone" layoutX="100.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="errors" text="Este campo no puede estar vacío" />
+                </Pane>
+            </Pane>
+        </Pane>
+        <Pane id="paneSection2_HallDates" fx:id="paneSection2_HallDates" layoutX="60.0" layoutY="220.0" prefHeight="570.0" prefWidth="740.0" styleClass="panelSections">
+            <Group layoutX="15.0" layoutY="-10.0">
+                <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="23.0" stroke="BLACK" strokeLineCap="BUTT" strokeType="OUTSIDE" width="100.0" />
+                <Text layoutX="9.0" layoutY="16.0" stroke="#007df2" strokeLineCap="ROUND" strokeType="INSIDE" text="Datos del salón" />
+            </Group>
+            <Pane id="paneNumberPersons" fx:id="paneNumberPersons" layoutX="30.0" layoutY="20.0" prefHeight="116.0" prefWidth="680.0">
+                <HBox layoutX="20.0" layoutY="13.0" prefHeight="30.0">
+                    <ImageView fitHeight="30.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@img/group_FILL0_wght400_GRAD0_opsz24.png" />
+                    </ImageView>
+                    <Label id="labelNumberPersons" fx:id="labelNumberPersons" prefHeight="30.0" styleClass="labelTitles" text="Número de personas (max 300):">
+                        <padding>
+                            <Insets left="5.0" />
+                        </padding>
+                        <font>
+                            <Font name="System Bold" size="12.0" />
+                        </font>
+                    </Label>
+                </HBox>
+                <CheckBox id="checkBoxNumberPersons" fx:id="checkBoxNumberPersons" layoutX="505.0" layoutY="1.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="155.0" text="Otra cantidad" />
+                <Pane id="paneNumberPersonsChoose" fx:id="paneNumberPersonsChoose" layoutX="15.0" layoutY="50.0" prefHeight="50.0" prefWidth="650.0" styleClass="panelCategories">
+                    <Button id="buttonNumberPerson1" fx:id="buttonNumberPerson1" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="55.0" styleClass="buttonChoose" text="1" />
+                    <Button id="buttonNumberPerson2" fx:id="buttonNumberPerson2" layoutX="70.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="55.0" styleClass="buttonChoose" text="2" />
+                    <Button id="buttonNumberPerson3" fx:id="buttonNumberPerson3" layoutX="130.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="55.0" styleClass="buttonChoose" text="3" />
+                    <Button id="buttonNumberPerson4" fx:id="buttonNumberPerson4" layoutX="190.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="55.0" styleClass="buttonChoose" text="4" />
+                    <Button id="buttonNumberPerson5" fx:id="buttonNumberPerson5" layoutX="250.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="55.0" styleClass="buttonChoose" text="5" />
+                    <Button id="buttonNumberPerson6" fx:id="buttonNumberPerson6" layoutX="310.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="55.0" styleClass="buttonChoose" text="6" />
+                    <Button id="buttonNumberPerson7" fx:id="buttonNumberPerson7" layoutX="370.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="55.0" styleClass="buttonChoose" text="7" />
+                    <Button id="buttonNumberPerson8" fx:id="buttonNumberPerson8" layoutX="430.0" layoutY="10.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="55.0" styleClass="buttonChoose" text="8" />
+                    <Group layoutX="490.0" layoutY="2.0">
+                        <Rectangle id="rectangleNumberPersons" fx:id="rectangleNumberPersons" arcHeight="5.0" arcWidth="5.0" fill="#fff1e8" height="48.0" layoutX="-4.0" stroke="#ee0101" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="158.0" />
+                        <Spinner id="spinnerNumberPersons" fx:id="spinnerNumberPersons" editable="true" layoutY="8.0" prefHeight="30.0" prefWidth="150.0" />
+                    </Group>
+                </Pane>
+            </Pane>
+            <GridPane layoutX="30.0" layoutY="140.0" prefHeight="410.0" prefWidth="700.0">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="340.0" minWidth="10.0" prefWidth="340.0" />
+                    <ColumnConstraints halignment="CENTER" hgrow="ALWAYS" maxWidth="360.0" minWidth="10.0" prefWidth="360.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints maxHeight="410.0" minHeight="10.0" prefHeight="410.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="340.0" minWidth="10.0" prefWidth="340.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="140.0" minHeight="10.0" prefHeight="140.0" vgrow="SOMETIMES" />
+                        <RowConstraints maxHeight="220.0" minHeight="10.0" prefHeight="220.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <Pane id="paneDate" fx:id="paneDate" prefHeight="50.0" prefWidth="340.0" styleClass="panelCategories">
+                        <HBox layoutX="15.0" layoutY="10.0" prefHeight="30.0" prefWidth="100.0">
+                            <ImageView fitHeight="30.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                <Image url="@img/calendar_month_FILL0_wght400_GRAD0_opsz24.png" />
+                            </ImageView>
+                            <Label id="labelDate" fx:id="labelDate" accessibleText="Fecha" prefHeight="30.0" prefWidth="80.0" styleClass="labelTitles" text="Fecha:">
+                                <padding>
+                                    <Insets left="5.0" />
+                                </padding>
+                            </Label>
+                        </HBox>
+                        <DatePicker id="datePicker" fx:id="datePicker" accessibleText="Selector fecha" layoutX="120.0" layoutY="10.0" prefHeight="30.0" prefWidth="60.0" />
+                        <Rectangle id="rectangleSelectDate" fx:id="rectangleSelectDate" arcHeight="5.0" arcWidth="5.0" fill="#fff1e8" height="48.0" layoutX="190.0" stroke="#ee0101" strokeType="INSIDE" strokeWidth="2.0" visible="false" width="149.0" />
+                        <Label id="labelDateChoose" fx:id="labelDateChoose" accessibleText="Fecha escogida" layoutX="196.0" layoutY="9.0" prefHeight="30.0" prefWidth="130.0" text="(Selecionar fecha)" />
+                    </Pane>
+                    <Pane id="paneCuisine" fx:id="paneCuisine" prefHeight="140.0" prefWidth="340.0" styleClass="panelCategories" GridPane.rowIndex="1">
+                        <HBox layoutX="102.0" layoutY="10.0" prefHeight="30.0">
+                            <ImageView fitHeight="30.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                <Image url="@img/countertops_FILL0_wght400_GRAD0_opsz24.png" />
+                            </ImageView>
+                            <Label id="labelCuisine" fx:id="labelCuisine" accessibleText="Fecha" prefHeight="30.0" styleClass="labelTitles" text="Tipo de cocina">
+                                <padding>
+                                    <Insets left="5.0" />
+                                </padding>
+                            </Label>
+                        </HBox>
+                        <Button id="buttonBuffet" fx:id="buttonBuffet" layoutX="10.0" layoutY="48.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="buttonChoose" text="Buffet" />
+                        <Button id="buttonCard" fx:id="buttonCard" layoutX="120.0" layoutY="48.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="buttonChoose" text="Carta" />
+                        <Button id="buttonChef" fx:id="buttonChef" layoutX="230.0" layoutY="48.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="100.0" styleClass="buttonChoose" text="Chef" />
+                        <Button id="buttonOwnChoose" fx:id="buttonOwnChoose" layoutX="10.0" layoutY="90.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="320.0" styleClass="buttonChoose" text="Ninguna preferencia" />
+                    </Pane>
+                    <Pane id="paneEvent" fx:id="paneEvent" prefHeight="200.0" prefWidth="340.0" styleClass="panelCategories" GridPane.rowIndex="2">
+                        <HBox layoutX="102.0" layoutY="10.0" prefHeight="30.0">
+                            <ImageView fitHeight="30.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                                <Image url="@img/weekend_FILL0_wght400_GRAD0_opsz24.png" />
+                            </ImageView>
+                            <Label id="labelEvent" fx:id="labelEvent" accessibleText="Fecha" prefHeight="30.0" styleClass="labelTitles" text="Tipo de evento">
+                                <padding>
+                                    <Insets left="5.0" />
+                                </padding>
+                            </Label>
+                        </HBox>
+                        <Button id="buttonFeast" fx:id="buttonFeast" layoutX="10.0" layoutY="50.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="155.0" styleClass="buttonChoose" text="Banquete" />
+                        <Button id="buttonDayWork" fx:id="buttonDayWork" layoutX="175.0" layoutY="50.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="155.0" styleClass="buttonChoose" text="Jornada" />
+                        <Button id="buttonCongress" fx:id="buttonCongress" layoutX="10.0" layoutY="90.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="320.0" styleClass="buttonChoose" text="Congreso" />
+                        <Pane id="paneRoom" fx:id="paneRoom" layoutX="10.0" layoutY="139.0">
+                            <Label id="labelRoom" fx:id="labelRoom" layoutX="4.0" styleClass="labelTitles" text="¿Habitaciones?" />
+                            <Button id="buttonRoomNo" fx:id="buttonRoomNo" layoutY="31.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" styleClass="buttonChoose" text="No" />
+                            <Button id="buttonRoomYes" fx:id="buttonRoomYes" layoutX="60.0" layoutY="31.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="50.0" styleClass="buttonChoose" text="Sí" />
+                        </Pane>
+                        <Pane id="paneRoomDays" fx:id="paneRoomDays" layoutX="178.0" layoutY="139.0">
+                            <Label id="labelRoomDays" fx:id="labelRoomDays" layoutX="44.0" styleClass="labelTitles" text="¿Cuántos días?" />
+                            <Spinner id="spinnerRoomDays" fx:id="spinnerRoomDays" layoutY="32.0" prefHeight="30.0" />
+                        </Pane>
+                    </Pane>
+                </GridPane>
+                <Pane prefHeight="200.0" prefWidth="200.0" styleClass="panelCategories" GridPane.columnIndex="1">
+                    <ImageView id="imgViewHall" fx:id="imgViewHall" fitHeight="347.0" fitWidth="341.0" layoutX="10.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                        <Image url="@img/Ninguna preferencia.jpg" />
+                    </ImageView>
+                    <HBox layoutX="101.0" layoutY="14.0" prefHeight="30.0">
+                        <ImageView fitHeight="30.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                            <Image url="@img/light_group_FILL0_wght400_GRAD0_opsz24.png" />
+                        </ImageView>
+                        <Label fx:id="labelKindCuisine" styleClass="labelTitles" text="Sala según cocina">
+                            <padding>
+                                <Insets left="5.0" />
+                            </padding>
+                        </Label>
+                    </HBox>
+                </Pane>
+            </GridPane>
+        </Pane>
+    </Pane>
+    <Button fx:id="buttonReserve" layoutX="60.0" layoutY="930.0" mnemonicParsing="false" onAction="#handleButtonReserve" prefHeight="50.0" prefWidth="740.0" styleClass="buttonReserve" text="Reservar" />
+</Pane>

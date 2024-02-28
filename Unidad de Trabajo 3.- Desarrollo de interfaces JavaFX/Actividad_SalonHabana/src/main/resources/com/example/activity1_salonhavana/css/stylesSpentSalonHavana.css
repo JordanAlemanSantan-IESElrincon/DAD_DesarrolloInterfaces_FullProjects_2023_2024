@@ -1,0 +1,118 @@
+/* Class panels */
+.panelSections {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+.panelSections:hover {
+     /*-fx-border-color: blue;*/
+     -fx-border-color: #3D6562;
+    -fx-border-width: 2px;
+}
+
+.panelCategories {
+    -fx-background-color: #EEEEEE;
+    -fx-border-color: #dcdbdb;
+    -fx-border-radius: 2px;
+    -fx-border-width: 1px;
+}
+
+/* Class buttons */
+.buttonChoose {
+    -fx-border-color: #757575;
+    -fx-border-width: 1px;
+    -fx-background-color: white;
+    -fx-font-family: "Segoe Print";
+    -fx-font-size: 12px;
+    -fx-text-fill: black;
+}
+
+.buttonChooseSelected {
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+    -fx-font-family: "Segoe Print";
+    -fx-font-size: 12px;
+    -fx-background-color: #4e4f56;
+    -fx-text-fill: white;
+}
+
+.buttonChoose:hover, .buttonChooseSelected:hover {
+    -fx-border-color: #6e6d6d;
+    -fx-border-width: 2px;
+}
+
+.buttonReserve {
+    /*-fx-background-color: #0A448E;*/
+    -fx-background-color: #AF4D15;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-font-family: "Segoe Print";
+    -fx-font-weight: bold;
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+}
+
+.buttonReserve:hover {
+    -fx-border-color: #6e6d6d;
+    /*-fx-background-color: #022256;*/
+    -fx-background-color: #C67325;
+    -fx-border-width: 2px;
+    -fx-cursor: hand;
+}
+
+/* Class labels */
+.labelTitles {
+    -fx-font-family: "Segoe Print";
+    -fx-font-size: 14px;
+    -fx-text-fill: #333333;
+}
+
+
+/* Class placeholders */
+.placeholder {
+    -fx-fill: #808080;
+}
+
+/* Errors */
+.errors {
+    -fx-fill: red;
+}
+
+/* IDs */
+#paneMain {
+    -fx-background-color: #d5cfc8;
+}
+
+#paneTitle {
+    /*-fx-background-color: linear-gradient(to right, #080b80, #0a0c70, #0B0C63);*/
+    -fx-background-color: linear-gradient(to right, #3D6562, #306A60, #4A664F);
+    -fx-text-fill: white;
+}
+
+
+#textNumberPersons {
+    -fx-fill: #807c7c;
+}
+
+#checkBoxNumberPersons {
+    -fx-font-family: "Segoe Print";
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333;
+}
+
+#checkBoxNumberPersons:hover {
+    -fx-font-weight: bold;
+}
+
+#labelDateChoose {
+    -fx-font-family: "Comic Sans MS";
+    -fx-font-size: 14px;
+    -fx-text-fill: red;
+    -fx-font-weight: bold;
+}
+
+#labelDateChooseError {
+    -fx-fill: red;
+}
+

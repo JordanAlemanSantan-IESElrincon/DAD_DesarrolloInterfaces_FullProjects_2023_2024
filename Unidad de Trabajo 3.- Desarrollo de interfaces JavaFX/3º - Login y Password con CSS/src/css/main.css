@@ -1,0 +1,38 @@
+#paneMain {
+    -fx-background-color: linear-gradient(to right, #5E63FC, #3A44BC, #16247B);
+    /* background-color: linear-gradient(to right, #4A52D8, #333EA9, #253287); */
+
+    
+}
+
+#paneUserPass {
+    -fx-border-color: black;
+    -fx-border-radius: 20px;
+    -fx-border-width: 3px;
+    /* -fx-border-style: ridge; */
+    /* -fx-background-color: red; */
+}
+
+#labelTitleLog {
+    -fx-text-fill: black;
+}
+
+#labelTitleIn {
+    -fx-text-fill: white;
+}
+
+#labelForgotPassword {
+    -fx-text-fill: white;
+}
+
+#buttonLogin {
+    -fx-background-color: #393447;
+    -fx-text-fill: white;
+    -fx-cursor: hand;
+}
+
+#buttonLogin:hover {
+    -fx-background-color: #8174a4;
+    -fx-border-color: black;
+    -fx-text-fill: white;
+}

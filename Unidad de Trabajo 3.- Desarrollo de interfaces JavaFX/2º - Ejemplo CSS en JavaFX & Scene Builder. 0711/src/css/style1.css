@@ -1,0 +1,63 @@
+/* #titulo {
+    -fx-font-family: "Hervetica";
+    -fx-font-style: italic;
+    -fx-font-size: 36px;
+    -fx-text-fill: #FFFFFF;
+}
+
+#fondo {
+    -fx-background-color: #000000;
+} */
+
+Button {
+    /* -fx-background-color: rgb(81,88,229); */
+    -fx-background-color: linear-gradient(to right, #4A52D8, #333EA9, #253287);
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-family: "Times New Roman";
+    -fx-font-style: italic;
+    -fx-font-size: 28px;
+    -fx-border-radius: 10 10 10 10;
+    -fx-border-radius: 10 10 10 10;
+    
+
+    background-color: #008287;
+    border-color: #FFFFFF;
+    border-width: 2px;
+    color: #FFFFFF;
+    font-family: "Times New Roman";
+    font-style: italic;
+    font-size: 28px;
+    border-radius: 10px;
+    border-radius: 10px;
+}
+
+#autor {
+    -fx-font-family: "Hervetica";
+    -fx-text-fill: #FFFF00;
+    -fx-font-size: 12px;
+
+    font-family: "Hervetica";
+    color: #FFFF00;
+    font-size: 12px;
+}
+
+Button:hover {
+    -fx-background-color: #333333;
+    -fx-font-size: 22px;
+
+    background-color: #333333;
+    font-size: 22px;
+}
+
+Button:pressed {
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: bold;
+}
+

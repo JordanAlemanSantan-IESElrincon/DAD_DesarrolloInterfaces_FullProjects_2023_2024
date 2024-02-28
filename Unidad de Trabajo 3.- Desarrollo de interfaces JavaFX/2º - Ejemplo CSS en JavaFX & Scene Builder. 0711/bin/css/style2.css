@@ -1,0 +1,55 @@
+Button {
+    /* Propiedades con prefijo -fx- */
+    -fx-background-color: #E6FD74;
+    -fx-border-color: #FFFFFF;
+    -fx-border-width: 2;
+    -fx-text-fill: #FF3399;
+    -fx-font-family: "Georgia";
+    -fx-font-style: italic;
+    -fx-font-size: 28px;
+    -fx-background-radius: 10 10 10 10;
+
+    /* Propiedades CSS estándar correspondientes */
+    background-color: #E6FD74;
+    border-color: #FFFFFF;
+    border-width: 2px;
+    color: #FF3399;
+    font-family: "Georgia";
+    font-style: italic;
+    font-size: 28px;
+    border-radius: 10px;
+}
+
+#autor {
+    /* Propiedades con prefijo -fx- */
+    -fx-font-family: "Hervetica";
+    -fx-text-fill: #FFFF00;
+    -fx-font-size: 12px;
+
+    /* Propiedades CSS estándar correspondientes */
+    font-family: "Hervetica";
+    color: #FFFF00;
+    font-size: 12px;
+}
+
+Button:hover {
+    /* Propiedades con prefijo -fx- */
+    -fx-background-color: #333333;
+    -fx-font-size: 22px;
+
+    /* Propiedades CSS estándar correspondientes */
+    background-color: #333333;
+    font-size: 22px;
+}
+
+Button:pressed {
+    /* Propiedades con prefijo -fx- */
+    -fx-background-color: #FFFFFF;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+
+    /* Propiedades CSS estándar correspondientes */
+    background-color: #FFFFFF;
+    color: #000000;
+    font-weight: bold;
+}
